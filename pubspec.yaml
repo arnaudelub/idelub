@@ -14,8 +14,13 @@ dependencies:
   bloc: ^7.0.0-nullsafety.3
   flutter_bloc: ^7.0.0-nullsafety.3
   intl: ^0.17.0
+
+  firebase_core: ^1.0.1
+  cloud_firestore: ^1.0.1
   project_repository:
       path: packages/project_repository
+  theme:
+      path: packages/theme
 
 dev_dependencies:
   flutter_test:
