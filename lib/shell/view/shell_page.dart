@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// This is the entry point of the web app, it will wrap the whole application
 class ShellPage extends StatelessWidget {
   const ShellPage({Key? key}) : super(key: key);
   @override
