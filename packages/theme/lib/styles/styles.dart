@@ -29,7 +29,7 @@ class Styles {
   static const Color redColor = Color(0xFFE08080);
   static const Color orange = Color(0xFFFFC38B);
   static const Color primaryColor = Color(0xFF8856AC);
-  static const Color primaryText = Color(0xFF257CFF);
+  static const Color primaryText = Color(0xFF2C2C78);
 
   static TextStyle customTextStyle({
     Color color = primaryText,

@@ -58,13 +58,21 @@ class AppTheme {
         hintColor: Styles.greyColor,
         floatingActionButtonTheme: fabTheme,
         buttonColor: Styles.primaryText,
+        tabBarTheme: tabBarTheme,
         buttonTheme: buttonTheme);
   }
 
+  static const TabBarTheme tabBarTheme = TabBarTheme(
+    labelPadding: EdgeInsets.symmetric(vertical: 24),
+    unselectedLabelColor: Colors.white,
+    labelStyle: TextStyle(fontWeight: _bold, fontSize: 32),
+    unselectedLabelStyle: TextStyle(fontSize: 32, fontWeight: _bold),
+    labelColor: Styles.primaryText,
+  );
   static ButtonThemeData buttonTheme = ButtonThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
     buttonColor: Styles.primaryText,
-    splashColor: Colors.white,
+    splashColor: Colors.black,
     padding: const EdgeInsets.all(14.0),
   );
   static ColorScheme lightColorScheme = ColorScheme(
@@ -114,13 +122,13 @@ class AppTheme {
     actionsIconTheme: _darkActionIconTheme,
   );
   static final AppBarTheme _lightAppBarTheme = AppBarTheme(
-      color: Colors.white,
+      color: Colors.black.withOpacity(0.2),
       elevation: 0,
       textTheme: _textTheme,
-      centerTitle: false,
+      centerTitle: true,
       iconTheme: _lightActionIconTheme,
       actionsIconTheme: _lightActionIconTheme,
-      brightness: Brightness.light);
+      brightness: Brightness.dark);
 
   static const IconThemeData _darkActionIconTheme = IconThemeData(
     color: Colors.indigo,
@@ -201,7 +209,7 @@ class AppTheme {
     ),
     button: GoogleFonts.montserrat(
       fontSize: 18.0,
-      color: Colors.white,
+      color: Styles.primaryText,
       fontStyle: FontStyle.normal,
       fontWeight: _medium,
     ),

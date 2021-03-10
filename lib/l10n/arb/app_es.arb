@@ -3,5 +3,21 @@
     "counterAppBarTitle": "Contador",
     "@counterAppBarTitle": {
         "description": "Texto mostrado en la AppBar de la página del contador"
+    },
+    "homeAppBarButton": "Home",
+    "@homeAppBarButton": {
+        "description": "Text shown in tab for home button"
+    },
+    "aboutmeAppBarButton": "About me",
+    "@aboutmeAppBarButton": {
+        "description": "Text shown in tab for about me button"
+    },
+    "projectAppBarButton": "Project",
+    "@projectAppBarButton": {
+        "description": "Text shown in tab for project button"
+    },
+    "contactAppBarButton": "Contact",
+    "@contactAppBarButton": {
+        "description": "Text shown in tab for contact button"
     }
 }
