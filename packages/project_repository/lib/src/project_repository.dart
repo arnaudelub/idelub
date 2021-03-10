@@ -7,8 +7,9 @@ class ProjectRepository implements IProjectRepository {
 
   final projectCollection = FirebaseFirestore.instance.collection('projects');
 
+  @override
   Future<List<Project>> getProjects() async {
-    final QuerySnapshot snapshot = await projectCollection.get();
+    final snapshot = await projectCollection.get();
     return snapshot.docs
         .map((doc) => Project.fromEntity(ProjectEntity.fromSnapshot(doc)))
         .toList();

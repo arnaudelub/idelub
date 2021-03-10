@@ -14,6 +14,7 @@ import 'package:idelub/app/app.dart';
 import 'package:idelub/app/app_bloc_observer.dart';
 
 void main() {
+  debugPrint = (String? message, {int? wrapWidth}) {};
   Bloc.observer = AppBlocObserver();
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);

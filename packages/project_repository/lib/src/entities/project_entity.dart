@@ -2,6 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
 class ProjectEntity extends Equatable {
+  const ProjectEntity(this.id, this.description, this.web, this.github,
+      this.display, this.ongoing, this.image, this.screenshots);
+
   /// the id of the document's project
   final String id;
 
@@ -26,9 +29,6 @@ class ProjectEntity extends Equatable {
   /// screenshots url of the screens
   final List<String> screenshots;
 
-  const ProjectEntity(this.id, this.description, this.web, this.github,
-      this.display, this.ongoing, this.image, this.screenshots);
-
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -48,7 +48,9 @@ class ProjectEntity extends Equatable {
 
   @override
   String toString() {
-    return 'ProjectEntity(id: $id, description: $description, web: $web, github: $github, display: $display, ongoing: $ongoing, image: $image, screenshots: $screenshots)';
+    return 'ProjectEntity(id: $id, description: $description, web: $web,'
+        'github: $github, display: $display, ongoing: $ongoing,'
+        ' image: $image, screenshots: $screenshots)';
   }
 
   static ProjectEntity fromJson(Map<String, dynamic> json) {

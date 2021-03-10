@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:project_repository/project_repository.dart';
 import 'package:project_repository/src/entities/entities.dart';
 
 @immutable
@@ -85,7 +84,9 @@ class Project {
 
   @override
   String toString() {
-    return 'ProjectEntity(id: $id, description: $description, web: $web, github: $github, display: $display, ongoing: $ongoing, image: $image, screenshots: $screenshots)';
+    return 'ProjectEntity(id: $id, description: $description, web: $web,'
+        'github: $github, display: $display, ongoing: $ongoing,'
+        'image: $image, screenshots: $screenshots)';
   }
 
   ProjectEntity toEntity() {

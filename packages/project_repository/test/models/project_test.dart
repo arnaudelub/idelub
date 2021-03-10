@@ -12,7 +12,7 @@ void main() {
 
     test("Shouldn't throw any error when web is null", () {
       expect(
-          Project(
+          const Project(
               id: id,
               description: description,
               display: true,
@@ -21,7 +21,7 @@ void main() {
               github: github,
               image: image,
               screenshots: screenshots),
-          Project(
+          const Project(
               id: id,
               description: description,
               display: true,
@@ -34,7 +34,7 @@ void main() {
     });
     test("Shouldn't throw any error when github is null", () {
       expect(
-          Project(
+          const Project(
               id: id,
               description: description,
               display: true,
@@ -43,7 +43,7 @@ void main() {
               github: null,
               image: image,
               screenshots: screenshots),
-          Project(
+          const Project(
               id: id,
               description: description,
               display: true,
